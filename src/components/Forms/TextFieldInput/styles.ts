@@ -12,7 +12,7 @@ export const Container = styled.div<ContainerProps>`
   border: 1px solid ${({ theme, error }) => error ?  '#F44336'  : theme.palette.grey[300]};
   width: ${({ width }) => width};
 
-  background: ${({ theme, disabled }) => disabled ? theme.palette.grey[100] : ''};
+  background: ${({ theme, disabled }) => disabled ? theme.palette.grey[300] : ''};
 
   padding-left: 1.063rem;
   display: flex;

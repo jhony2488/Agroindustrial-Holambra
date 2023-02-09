@@ -1,9 +1,6 @@
 export const MaskTypes = {
   cpf: [/\d/, /\d/,  /\d/, '.', /\d/, /\d/, /\d/, '.', /\d/, /\d/, /\d/, '-', /\d/, /\d/],
-  number: ['(', /[0-9]/, /[0-9]/, ')', ' ',  /\d/, ' ', /\d/, /\d/,  /\d/,  /\d/,  '-',  /\d/, /\d/,  /\d/,  /\d/],
   cnpj: [/\d/, /\d/, '.',  /\d/, /\d/, /\d/, '.', /\d/, /\d/, /\d/, '/', /\d/, /\d/,  /\d/,  /\d/, '-', /\d/,  /\d/],
-  cep: [ /\d/, /\d/,  /\d/,  /\d/, /\d/,  '-', /\d/, /\d/, /\d/],
-  date: [/\d/, /\d/, '/', /\d/, /\d/,  '/', /\d/, /\d/,  /\d/,  /\d/ ]
 }
 
-export type TMasks = 'cpf' | 'number' | 'cnpj' | 'cep' | 'date'
+export type TMasks = 'cpf' | 'cnpj'

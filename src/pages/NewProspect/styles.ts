@@ -16,13 +16,7 @@ export const Wrap = styled.div`
   .content {
     padding-top: 3rem;
   }
-`;
-
-export const WrapOSContainer = styled.div`
-  flex: 0.68;
-  padding-left: 2rem;
-`;
-
-export const WrapResearchContainer = styled.div`
-  flex: 0.3;
+  .button-submit{
+    margin-top: 1rem;
+  }
 `;

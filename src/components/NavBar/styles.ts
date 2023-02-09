@@ -3,7 +3,6 @@ import styled from 'styled-components';
 export const ContainerNavbar = styled.div`
   height: 11vh;
   width: 100%;
-  background: #ffffff;
   overflow-x: hidden;
   transition: 4s ease-out;
   color: #373942;

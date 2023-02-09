@@ -14,6 +14,7 @@ const Home: React.FC = () => {
   const [listProspects, setListProspects] = useState< []>([]);
   const [openModalEdit, setOpenModalEdit] = useState<boolean>(false);
   const [id, setId] = useState<number | string>();
+  const [valuesGet, setGetValues] = useState<number | string>();
 
   const headTable=['Nome', 'Documento', 'Email', 'Phone', 'Endereço', 'Ações']
 
@@ -39,7 +40,7 @@ const Home: React.FC = () => {
           <Sidebar listNav={listNav} />
         </Grid>
         <Grid item xs={8.9}>
-          <Table TableContent={listProspects} openModal={()=>setOpenModalEdit(true)} tableHead={headTable}/>
+          <Table TableContent={listProspects} openModal={()=>setOpenModalEdit(true)} setValueGet={setGetValues} tableHead={headTable}/>
         </Grid>
       </Grid>
     </Wrap>
